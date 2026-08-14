@@ -2,10 +2,10 @@
     --background: #f7f5f2;
     --text: #252525;
     --muted: #77736d;
-    --accent: #7b4fa3;
+    --accent: #6b0505;
     --border: #dedbd6;
     --card-hover: #efebe6;
-    --focus-ring: rgba(123, 79, 163, 0.25);
+    --focus-ring: rgba(106, 14, 14, 0.803);
     --max-width: 760px;
 }
 
@@ -262,13 +262,13 @@ This makes the whole project card clickable.
     box-shadow: none;
 }
 
-/* Experience and education */
+/* experience and education */
 #experience .entry-description,
 #education .entry-description {
     font-weight: 600;
 }
 
-/* Skills */
+/* skills */
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -392,5 +392,81 @@ footer p {
 
     footer {
         flex-direction: column;
+    }
+}
+
+/* typing effects */
+
+.typing-active::after {
+    content: "|";
+    margin-left: 2px;
+    animation: blink 0.4s infinite;
+}
+
+@keyframes blink {
+    0%,
+    50% {
+        opacity: 1;
+    }
+
+    51%,
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Experience */
+
+.experience-entry {
+    padding: 28px 0;
+}
+
+.experience-entry + .experience-entry {
+    border-top: 1px solid var(--border);
+}
+
+.experience-heading {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.experience-role {
+    margin: 0;
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+}
+
+.experience-company {
+    margin: 3px 0 0;
+    color: var(--accent);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.experience-date {
+    flex-shrink: 0;
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.85rem;
+}
+
+.experience-description {
+    max-width: 650px;
+    margin: 14px 0 0;
+}
+
+/* mobile experience layout */
+
+@media (max-width: 600px) {
+    .experience-heading {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .experience-date {
+        margin-top: 2px;
     }
 }

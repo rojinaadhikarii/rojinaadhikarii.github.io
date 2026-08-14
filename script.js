@@ -4,16 +4,81 @@ if (yearElement) {
     yearElement.textContent = new Date().getFullYear();
 }
 
-/*
-prevent temporary placeholder links from jumping to the top of the page.
-remove the "unavailable" class and replace href="#" once each URL is ready.
-*/
-const unavailableLinks = document.querySelectorAll(
-    'a[aria-disabled="true"]'
-);
 
-unavailableLinks.forEach((link) => {
-    link.addEventListener("click", (event) => {
-        event.preventDefault();
+const typingItems = [
+    {
+        element: document.querySelector("#typing-greeting"),
+        text: "hi, i'm rojina.",
+        speed: 40
+    },
+    {
+        element: document.querySelector("#typing-line-1"),
+        text: "i'm a sophomore at mit studying computer science and mathematics, with a focus on artificial intelligence and decision making.",
+        speed: 12
+    },
+    {
+        element: document.querySelector("#typing-line-2"),
+        text: "i'm interested in software engineering, full-stack development, and building thoughtful technology that improves everyday experiences.",
+        speed: 12
+    }
+];
+
+
+function typeText(element, text, speed) {
+    return new Promise((resolve) => {
+
+        if (!element) {
+            resolve();
+            return;
+        }
+
+        element.classList.add("typing-active");
+
+        let index = 0;
+
+        function typeNextCharacter() {
+
+            if (index < text.length) {
+
+                element.textContent += text.charAt(index);
+
+                index++;
+
+                setTimeout(
+                    typeNextCharacter,
+                    speed
+                );
+
+            } else {
+
+                element.classList.remove("typing-active");
+
+                resolve();
+
+            }
+        }
+
+        typeNextCharacter();
     });
-});
+}
+
+
+async function runTypingAnimation() {
+
+    for (const item of typingItems) {
+
+        await typeText(
+            item.element,
+            item.text,
+            item.speed
+        );
+
+        await new Promise((resolve) => {
+            setTimeout(resolve, 100);
+        });
+
+    }
+}
+
+
+runTypingAnimation();

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
 
@@ -20,15 +21,30 @@
 </head>
 
 <body>
+
+    <!-- Header -->
     <header class="site-header">
+
         <a class="name" href="index.html">
             Rojina Adhikari
         </a>
 
         <nav aria-label="Main navigation">
-            <a href="index.html" aria-current="page">experience</a>
-            <a href="about.html">about</a>
-            <a href="mailto:rojina@mit.edu">contact</a>
+
+            <a
+                href="index.html"
+                aria-current="page"
+            >
+                experience
+            </a>
+
+            <a href="about.html">
+                about
+            </a>
+
+            <a href="mailto:rojina@mit.edu">
+                contact
+            </a>
 
             <a
                 href="assets/Rojina_Adhikari_Resume_2026.pdf"
@@ -37,35 +53,45 @@
             >
                 resume
             </a>
+
         </nav>
+
     </header>
 
+
     <main>
-        <!-- Introduction -->
+
+        <!-- Introduction / Typing Animation -->
         <section class="intro">
-            <p class="intro-greeting">hi, i'm rojina.</p>
 
-            <p>
-                i'm a sophomore at mit studying computer science and
-                mathematics, with a focus on artificial intelligence and
-                decision making.
+            <p class="intro-greeting">
+                <span id="typing-greeting"></span>
             </p>
 
             <p>
-                i'm interested in software engineering, full-stack
-                development, and building thoughtful technology that improves
-                everyday experiences.
+                <span id="typing-line-1"></span>
             </p>
+
+            <p>
+                <span id="typing-line-2"></span>
+            </p>
+
         </section>
+
 
         <!-- Projects -->
         <section id="projects">
+
             <h1>projects</h1>
 
-            <!-- project 1: Flow State -->
+
+            <!-- Project 1: Flow State -->
             <article class="project-card">
+
                 <div class="entry-heading">
+
                     <h2 class="project-title">
+
                         <a
                             class="project-live-link"
                             href="https://megna10-rojinaadhikarii-6.onrender.com/"
@@ -75,12 +101,18 @@
                         >
                             flow state
                         </a>
+
                     </h2>
 
                     <div class="project-actions">
-                        <span class="visit-project" aria-hidden="true">
+
+                        <span
+                            class="visit-project"
+                            aria-hidden="true"
+                        >
                             visit project ↗
                         </span>
+
                         <a
                             class="github-link"
                             href="https://github.com/weblab-class/megna10-rojinaadhikarii"
@@ -90,7 +122,9 @@
                         >
                             github
                         </a>
+
                     </div>
+
                 </div>
 
                 <p class="entry-description">
@@ -102,12 +136,17 @@
                 <p class="entry-meta">
                     mongodb · express.js · react.js · node.js
                 </p>
+
             </article>
 
-            <!-- project 2: Pomodoro Timer -->
+
+            <!-- Project 2: Pomodoro Timer -->
             <article class="project-card">
+
                 <div class="entry-heading">
+
                     <h2 class="project-title">
+
                         <a
                             class="project-live-link"
                             href="https://github.com/rojinaadhikarii/pomodorotimer/releases/latest"
@@ -117,10 +156,15 @@
                         >
                             pomodoro timer
                         </a>
+
                     </h2>
 
                     <div class="project-actions">
-                        <span class="visit-project" aria-hidden="true">
+
+                        <span
+                            class="visit-project"
+                            aria-hidden="true"
+                        >
                             download app ↗
                         </span>
 
@@ -133,23 +177,31 @@
                         >
                             github
                         </a>
+
                     </div>
+
                 </div>
 
                 <p class="entry-description">
-                    a desktop productivity application that combines a pomodoro timer,
-                    task planner, focus streaks, and weekly productivity analytics.
+                    a desktop productivity application that combines a
+                    pomodoro timer, task planner, focus streaks, and weekly
+                    productivity analytics.
                 </p>
 
                 <p class="entry-meta">
                     python · customtkinter · sqlite · matplotlib
                 </p>
+
             </article>
 
-            <!-- Project 3: Portfolio -->
+
+            <!-- Project 3: Personal Portfolio -->
             <article class="project-card">
+
                 <div class="entry-heading">
+
                     <h2 class="project-title">
+
                         <a
                             class="project-live-link"
                             href="index.html"
@@ -157,24 +209,30 @@
                         >
                             personal portfolio
                         </a>
+
                     </h2>
 
                     <div class="project-actions">
-                        <span class="visit-project" aria-hidden="true">
+
+                        <span
+                            class="visit-project"
+                            aria-hidden="true"
+                        >
                             view project ↗
                         </span>
 
-                        <!-- Replace # with this portfolio's GitHub URL -->
                         <a
                             class="github-link"
                             href="https://github.com/rojinaadhikarii/rojinaadhikariportfolio"
-                            aria-label="Portfolio GitHub repository"
-                            aria-disabled="true"
-                            title="GitHub repository"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="View personal portfolio on GitHub"
                         >
                             github
                         </a>
+
                     </div>
+
                 </div>
 
                 <p class="entry-description">
@@ -186,29 +244,117 @@
                 <p class="entry-meta">
                     html · css · javascript · github pages
                 </p>
+
             </article>
+
         </section>
+
 
         <!-- Experience -->
-        <section id="experience">
-            <h2 class="section-title">experience</h2>
+    <section id="experience">
+        <h2 class="section-title">experience</h2>
 
-            <article class="entry">
-                <p class="entry-description">
-                    experience coming soon
-                </p>
+        <!-- MassHealth -->
+        <article class="experience-entry">
+            <div class="experience-heading">
+                <div>
+                    <h3 class="experience-role">
+                        data analyst intern
+                    </h3>
 
-                <p class="entry-meta">
-                    internships · research · campus involvement
+                    <p class="experience-company">
+                        masshealth analytics
+                    </p>
+                </div>
+
+                <p class="experience-date">
+                    may 2026 — present
                 </p>
-            </article>
-        </section>
+            </div>
+
+            <p class="experience-description">
+                building validation and automation systems for data analytics
+                workflows, including a framework for cross-checking LLM-generated
+                summaries against source datasets and regression testing for
+                dashboard outputs.
+            </p>
+
+            <p class="entry-meta">
+                python · selenium · LLM validation · regression testing
+            </p>
+        </article>
+
+
+        <!-- MIT Senseable City Lab -->
+        <article class="experience-entry">
+            <div class="experience-heading">
+                <div>
+                    <h3 class="experience-role">
+                        data science & ai undergraduate researcher
+                    </h3>
+
+                    <p class="experience-company">
+                        mit senseable city lab
+                    </p>
+                </div>
+
+                <p class="experience-date">
+                    sep 2025 — present
+                </p>
+            </div>
+
+            <p class="experience-description">
+                developing large-scale simulation pipelines that generate over
+                1 million housing configurations and investigating how ai model
+                performance changes across geographic regions.
+            </p>
+
+            <p class="entry-meta">
+                python · data science · simulation · machine learning
+            </p>
+        </article>
+
+
+        <!-- i2E -->
+        <article class="experience-entry">
+            <div class="experience-heading">
+                <div>
+                    <h3 class="experience-role">
+                        data science intern
+                    </h3>
+
+                    <p class="experience-company">
+                        i2e, inc.
+                    </p>
+                </div>
+
+                <p class="experience-date">
+                    apr 2024 — may 2025
+                </p>
+            </div>
+
+            <p class="experience-description">
+                developed computational models and analyzed time-series
+                operational data to study startup workflows, labor allocation,
+                and automation, contributing to a 20% improvement in workplace
+                efficiency.
+            </p>
+
+            <p class="entry-meta">
+                data analysis · time-series modeling · computational modeling
+            </p>
+        </article>
+    </section>
 
         <!-- Education -->
         <section id="education">
-            <h2 class="section-title">education</h2>
+
+            <h2 class="section-title">
+                education
+            </h2>
 
             <article class="entry">
+
                 <p class="entry-description">
                     massachusetts institute of technology
                 </p>
@@ -216,44 +362,66 @@
                 <p class="entry-meta">
                     computer science and mathematics · may 2029
                 </p>
+
             </article>
+
         </section>
+
 
         <!-- Skills -->
         <section id="skills">
-            <h2 class="section-title">skills</h2>
+
+            <h2 class="section-title">
+                skills
+            </h2>
 
             <div class="skills-grid">
+
                 <div class="skill-group">
+
                     <h3>languages</h3>
 
                     <p>
                         python · javascript · html · css
                     </p>
+
                 </div>
 
+
                 <div class="skill-group">
+
                     <h3>technologies</h3>
 
                     <p>
                         react · node.js · express.js · mongodb · git · github
                     </p>
+
                 </div>
 
+
                 <div class="skill-group">
+
                     <h3>interests</h3>
 
                     <p>
                         software engineering · full-stack development ·
                         artificial intelligence
                     </p>
+
                 </div>
+
             </div>
+
         </section>
+
     </main>
 
+
+    <!-- Footer -->
     <footer>
+
         <div class="social-links">
+
             <a
                 href="https://github.com/rojinaadhikarii"
                 target="_blank"
@@ -273,11 +441,15 @@
             <a href="mailto:rojina@mit.edu">
                 email
             </a>
+
         </div>
 
         <p>
             © <span id="year"></span> rojina adhikari
         </p>
+
     </footer>
+
 </body>
+
 </html>
