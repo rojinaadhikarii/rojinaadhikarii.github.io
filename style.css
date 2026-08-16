@@ -49,7 +49,7 @@ a:focus-visible {
     border-radius: 3px;
 }
 
-/* Center the page content */
+/* center page content */
 .site-header,
 main,
 footer {
@@ -57,7 +57,7 @@ footer {
     margin-inline: auto;
 }
 
-/* Header */
+/* header */
 .site-header {
     display: flex;
     align-items: center;
@@ -91,7 +91,7 @@ nav a[aria-current="page"] {
     color: var(--text);
 }
 
-/* Introduction */
+/* introduction */
 .intro {
     max-width: 600px;
     margin-bottom: 80px;
@@ -117,7 +117,7 @@ h1,
     letter-spacing: 0.13em;
 }
 
-/* Regular entries */
+/* regular entries */
 .entry {
     padding: 0 0 28px;
 }
@@ -137,7 +137,7 @@ h1,
     font-size: 0.9rem;
 }
 
-/* Project cards */
+/* project cards */
 .project-card {
     position: relative;
     margin: 0 -22px;
@@ -152,7 +152,7 @@ h1,
         transform 180ms ease;
 }
 
-/* Divider between project cards */
+/* divider between project cards */
 .project-card + .project-card {
     margin-top: 8px;
 }
@@ -166,8 +166,7 @@ h1,
 }
 
 /*
-The title link's invisible area covers the whole card.
-This makes the whole project card clickable.
+make project card clickable.
 */
 .project-live-link::after {
     position: absolute;
@@ -237,7 +236,6 @@ This makes the whole project card clickable.
     opacity: 0.65;
 }
 
-/* Temporary links that have not been added yet */
 .unavailable {
     color: var(--muted);
     cursor: not-allowed;
@@ -252,7 +250,7 @@ This makes the whole project card clickable.
     cursor: default;
 }
 
-/* Prevent unavailable cards from looking like active links */
+/* prevent unavailable cards from looking like active links */
 .project-placeholder .project-live-link::after {
     display: none;
 }
@@ -287,7 +285,7 @@ This makes the whole project card clickable.
     color: var(--muted);
 }
 
-/* About page */
+/* about page */
 .about {
     max-width: 640px;
 }
@@ -307,7 +305,7 @@ This makes the whole project card clickable.
     color: var(--muted);
 }
 
-/* Footer */
+/* footer */
 footer {
     display: flex;
     justify-content: space-between;
@@ -328,7 +326,7 @@ footer p {
     gap: 16px;
 }
 
-/* Reduced-motion accessibility */
+/* reduced-motion accessibility */
 @media (prefers-reduced-motion: reduce) {
     html {
         scroll-behavior: auto;
@@ -341,7 +339,7 @@ footer p {
     }
 }
 
-/* Phone layout */
+/* phone layout */
 @media (max-width: 600px) {
     .site-header {
         align-items: flex-start;
@@ -376,10 +374,7 @@ footer p {
         width: 100%;
     }
 
-    /*
-    Hover does not normally exist on phones, so keep the
-    project action visible.
-    */
+
     .visit-project {
         opacity: 1;
         transform: none;
@@ -415,7 +410,7 @@ footer p {
     }
 }
 
-/* Experience */
+/* experience */
 
 .experience-entry {
     padding: 28px 0;
@@ -458,7 +453,7 @@ footer p {
     margin: 14px 0 0;
 }
 
-/* mobile experience layout */
+/* phone layout */
 
 @media (max-width: 600px) {
     .experience-heading {
