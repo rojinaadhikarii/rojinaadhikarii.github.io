@@ -5,6 +5,7 @@ if (yearElement) {
 }
 
 
+
 const typingItems = [
     {
         element: document.querySelector("#typing-greeting"),
@@ -13,15 +14,16 @@ const typingItems = [
     },
     {
         element: document.querySelector("#typing-line-1"),
-        text: "i'm a sophomore at mit studying computer science and mathematics, with a focus on artificial intelligence and decision making.",
+        text: "i'm a sophomore at mit studying computer science & artificial intelligence (6-4) and mathematical economics (14-2).",
         speed: 12
     },
     {
         element: document.querySelector("#typing-line-2"),
-        text: "i'm interested in software engineering, full-stack development, and building thoughtful technology that improves everyday experiences.",
+        text: "i build software, ai systems, and data pipelines, with a focus on turning complex technical problems into useful, real-world solutions.",
         speed: 12
     }
 ];
+
 
 
 function typeText(element, text, speed) {
